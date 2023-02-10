@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class baitap1 {
     public static void main(String[] args) {
         int [] a;
-        a= new int [100];
+        a = new int [100];
         int n;
         int s=0;
         Scanner sc=new Scanner(System.in);

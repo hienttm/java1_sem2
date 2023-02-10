@@ -4,20 +4,18 @@
  */
 package baitapQuanLySV_2;
 
-import java.util.Scanner;
-
 /**
  *
  * @author tranthimaihien
  */
 public class QuanlySV {
-    int n;
     Sinhvien[] arr;
     public Sinhvien Quanlysv(){
         arr= new Sinhvien[30];
         for(int i=0;i<30;i++){
             arr[i]=new Sinhvien();
         }
+        return null;
     }
     
 }
