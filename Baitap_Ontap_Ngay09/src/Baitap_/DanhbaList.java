@@ -76,7 +76,7 @@ public class DanhbaList {
     public void fix(){
         Scanner sc=new Scanner(System.in);
         String key;
-        System.out.println("Vui lòng nhập từ tên cần sửa: ");
+        System.out.println("Vui lòng nhập tên cần sửa: ");
         key=sc.nextLine();
         int k=0;
         for(int i=0;i<list.size();i++){
@@ -86,6 +86,14 @@ public class DanhbaList {
                 System.out.println("Sửa sđt thành:");
                 String newphone;
                 newphone=sc.nextLine();
+                // kiểm tra sđt mới có trùng sđt trong danh bạ k
+                for(int j=0;j<list.size();j++){
+                    if(list.get(j).PhoneNumber.equalsIgnoreCase(newphone)){
+                        System.out.println("SDT này đã tồn tại, vui lòng nhập sđt khác");
+                        return;
+                    }
+                }
+                //
                 list.get(i).setPhoneNumber(newphone);
                 k++;
             }
