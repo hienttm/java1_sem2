@@ -59,6 +59,7 @@ public class Complex {
         this.imaginaryPart = imaginaryPart;
     }
 
+    
     @Override
     public String toString() {
         return this.realPart + " + "+ this.imaginaryPart+"i";
