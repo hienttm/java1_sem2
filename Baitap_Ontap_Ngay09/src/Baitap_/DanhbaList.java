@@ -89,8 +89,8 @@ public class DanhbaList {
                 // kiểm tra sđt mới có trùng sđt trong danh bạ k
                 for(int j=0;j<list.size();j++){
                     if(list.get(j).PhoneNumber.equalsIgnoreCase(newphone)){
-                        System.out.println("SDT này đã tồn tại, vui lòng nhập sđt khác");
-                        return;
+                        System.out.println("SDT này đã tồn tại, vui lòng sửa lại");
+                        ;
                     }
                 }
                 //
